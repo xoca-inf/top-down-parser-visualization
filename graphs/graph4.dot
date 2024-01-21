@@ -1,0 +1,141 @@
+digraph parseTree {
+	v0 [label="E"];
+	v1 [label="T"];
+	v2 [label="F"];
+	v3 [label="(" ; style=filled; fillcolor=pink];
+	v4 [label="E"];
+	v5 [label="T"];
+	v6 [label="F"];
+	v7 [label="-" ; style=filled; fillcolor=pink];
+	v8 [label="F"];
+	v9 [label="(" ; style=filled; fillcolor=pink];
+	v10 [label="E"];
+	v11 [label="T"];
+	v12 [label="F"];
+	v13 [label="-" ; style=filled; fillcolor=pink];
+	v14 [label="F"];
+	v15 [label="(" ; style=filled; fillcolor=pink];
+	v16 [label="E"];
+	v17 [label="T"];
+	v18 [label="F"];
+	v19 [label="(" ; style=filled; fillcolor=pink];
+	v20 [label="E"];
+	v21 [label="T"];
+	v22 [label="F"];
+	v23 [label="1" ; style=filled; fillcolor=pink];
+	v22 -> v23
+	v24 [label="T'"];
+	v25 [label="*" ; style=filled; fillcolor=pink];
+	v26 [label="F"];
+	v27 [label="-" ; style=filled; fillcolor=pink];
+	v28 [label="F"];
+	v29 [label="2" ; style=filled; fillcolor=pink];
+	v28 -> v29
+	v26 -> v27
+	v26 -> v28
+	v30 [label="T'"];
+	v31 [label="ε"];
+	v30 -> v31
+	v24 -> v25
+	v24 -> v26
+	v24 -> v30
+	v21 -> v22
+	v21 -> v24
+	v32 [label="E'"];
+	v33 [label="+" ; style=filled; fillcolor=pink];
+	v34 [label="T"];
+	v35 [label="F"];
+	v36 [label="4" ; style=filled; fillcolor=pink];
+	v35 -> v36
+	v37 [label="T'"];
+	v38 [label="ε"];
+	v37 -> v38
+	v34 -> v35
+	v34 -> v37
+	v39 [label="E'"];
+	v40 [label="-" ; style=filled; fillcolor=pink];
+	v41 [label="T"];
+	v42 [label="F"];
+	v43 [label="-" ; style=filled; fillcolor=pink];
+	v44 [label="F"];
+	v45 [label="3" ; style=filled; fillcolor=pink];
+	v44 -> v45
+	v42 -> v43
+	v42 -> v44
+	v46 [label="T'"];
+	v47 [label="ε"];
+	v46 -> v47
+	v41 -> v42
+	v41 -> v46
+	v48 [label="E'"];
+	v49 [label="ε"];
+	v48 -> v49
+	v39 -> v40
+	v39 -> v41
+	v39 -> v48
+	v32 -> v33
+	v32 -> v34
+	v32 -> v39
+	v20 -> v21
+	v20 -> v32
+	v50 [label=")" ; style=filled; fillcolor=pink];
+	v18 -> v19
+	v18 -> v20
+	v18 -> v50
+	v51 [label="T'"];
+	v52 [label="ε"];
+	v51 -> v52
+	v17 -> v18
+	v17 -> v51
+	v53 [label="E'"];
+	v54 [label="ε"];
+	v53 -> v54
+	v16 -> v17
+	v16 -> v53
+	v55 [label=")" ; style=filled; fillcolor=pink];
+	v14 -> v15
+	v14 -> v16
+	v14 -> v55
+	v12 -> v13
+	v12 -> v14
+	v56 [label="T'"];
+	v57 [label="ε"];
+	v56 -> v57
+	v11 -> v12
+	v11 -> v56
+	v58 [label="E'"];
+	v59 [label="ε"];
+	v58 -> v59
+	v10 -> v11
+	v10 -> v58
+	v60 [label=")" ; style=filled; fillcolor=pink];
+	v8 -> v9
+	v8 -> v10
+	v8 -> v60
+	v6 -> v7
+	v6 -> v8
+	v61 [label="T'"];
+	v62 [label="ε"];
+	v61 -> v62
+	v5 -> v6
+	v5 -> v61
+	v63 [label="E'"];
+	v64 [label="ε"];
+	v63 -> v64
+	v4 -> v5
+	v4 -> v63
+	v65 [label=")" ; style=filled; fillcolor=pink];
+	v2 -> v3
+	v2 -> v4
+	v2 -> v65
+	v66 [label="T'"];
+	v67 [label="ε"];
+	v66 -> v67
+	v1 -> v2
+	v1 -> v66
+	v68 [label="E'"];
+	v69 [label="ε"];
+	v68 -> v69
+	v0 -> v1
+	v0 -> v68
+}

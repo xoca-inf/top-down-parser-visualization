@@ -1,0 +1,73 @@
+digraph parseTree {
+	v0 [label="E"];
+	v1 [label="T"];
+	v2 [label="F"];
+	v3 [label="1" ; style=filled; fillcolor=pink];
+	v2 -> v3
+	v4 [label="T'"];
+	v5 [label="ε"];
+	v4 -> v5
+	v1 -> v2
+	v1 -> v4
+	v6 [label="E'"];
+	v7 [label="+" ; style=filled; fillcolor=pink];
+	v8 [label="T"];
+	v9 [label="F"];
+	v10 [label="2" ; style=filled; fillcolor=pink];
+	v9 -> v10
+	v11 [label="T'"];
+	v12 [label="ε"];
+	v11 -> v12
+	v8 -> v9
+	v8 -> v11
+	v13 [label="E'"];
+	v14 [label="-" ; style=filled; fillcolor=pink];
+	v15 [label="T"];
+	v16 [label="F"];
+	v17 [label="3" ; style=filled; fillcolor=pink];
+	v16 -> v17
+	v18 [label="T'"];
+	v19 [label="ε"];
+	v18 -> v19
+	v15 -> v16
+	v15 -> v18
+	v20 [label="E'"];
+	v21 [label="+" ; style=filled; fillcolor=pink];
+	v22 [label="T"];
+	v23 [label="F"];
+	v24 [label="4" ; style=filled; fillcolor=pink];
+	v23 -> v24
+	v25 [label="T'"];
+	v26 [label="ε"];
+	v25 -> v26
+	v22 -> v23
+	v22 -> v25
+	v27 [label="E'"];
+	v28 [label="-" ; style=filled; fillcolor=pink];
+	v29 [label="T"];
+	v30 [label="F"];
+	v31 [label="5" ; style=filled; fillcolor=pink];
+	v30 -> v31
+	v32 [label="T'"];
+	v33 [label="ε"];
+	v32 -> v33
+	v29 -> v30
+	v29 -> v32
+	v34 [label="E'"];
+	v35 [label="ε"];
+	v34 -> v35
+	v27 -> v28
+	v27 -> v29
+	v27 -> v34
+	v20 -> v21
+	v20 -> v22
+	v20 -> v27
+	v13 -> v14
+	v13 -> v15
+	v13 -> v20
+	v6 -> v7
+	v6 -> v8
+	v6 -> v13
+	v0 -> v1
+	v0 -> v6
+}

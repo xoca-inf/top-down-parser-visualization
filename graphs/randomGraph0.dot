@@ -1,0 +1,35 @@
+digraph parseTree {
+	v0 [label="E"];
+	v1 [label="T"];
+	v2 [label="F"];
+	v3 [label="16" ; style=filled; fillcolor=pink];
+	v2 -> v3
+	v4 [label="T'"];
+	v5 [label="ε"];
+	v4 -> v5
+	v1 -> v2
+	v1 -> v4
+	v6 [label="E'"];
+	v7 [label="+" ; style=filled; fillcolor=pink];
+	v8 [label="T"];
+	v9 [label="F"];
+	v10 [label="-" ; style=filled; fillcolor=pink];
+	v11 [label="F"];
+	v12 [label="43" ; style=filled; fillcolor=pink];
+	v11 -> v12
+	v9 -> v10
+	v9 -> v11
+	v13 [label="T'"];
+	v14 [label="ε"];
+	v13 -> v14
+	v8 -> v9
+	v8 -> v13
+	v15 [label="E'"];
+	v16 [label="ε"];
+	v15 -> v16
+	v6 -> v7
+	v6 -> v8
+	v6 -> v15
+	v0 -> v1
+	v0 -> v6
+}
